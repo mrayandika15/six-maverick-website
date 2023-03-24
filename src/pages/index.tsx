@@ -1,9 +1,5 @@
-import { MainLayout } from '@/components';
-import { Box, Heading, AspectRatio, Text, Divider, Flex, Container, Image, Stack, Card, CardBody, CardFooter } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { OutlineButton } from '@/components';
-import { CardTeam } from '@/components';
-import { InnovativeSection } from '@/components';
+import { HeroSection, MainLayout } from '@/components';
+import AboutSection from '@/components/AboutSection';
 
 export default function Home() {
   return (
@@ -25,6 +21,8 @@ export default function Home() {
         </Heading>
         <CardTeam></CardTeam>
       </Container>
+      <HeroSection />
+      <AboutSection />
     </MainLayout>
   );
 }

@@ -10,7 +10,11 @@ import OutlineButton from './core/buttons/OutlineButton';
 // card
 import CardTeam from './core/cards/CardTeam';
 
-//innovative section
-import InnovativeSection from './InnovativeSection';
+// section
+import HeroSection from './HeroSection';
 
-export { Navbar, MainLayout, OutlineButton, CardTeam, InnovativeSection };
+// section
+import InnovativeSection from './InnovativeSection';
+import SectionLayout from './layouts/SectionLayout';
+
+export { Navbar, MainLayout, HeroSection, SectionLayout, OutlineButton, CardTeam, InnovativeSection };

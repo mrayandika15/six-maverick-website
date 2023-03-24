@@ -1,5 +1,11 @@
-import { MainLayout } from "@/components";
+import { HeroSection, MainLayout } from "@/components";
+import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
-  return <MainLayout>Halo</MainLayout>;
+  return (
+    <MainLayout>
+      <HeroSection />
+      <AboutSection />
+    </MainLayout>
+  );
 }

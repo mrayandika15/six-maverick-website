@@ -1,10 +1,11 @@
-type IListCardTeam = {
+export type IListCardTeam = {
   name: string;
   image: string;
-  twitter: string;
-  github: string;
-  linkedin: string;
-  instagram: string;
+  socialmedia: IListSocialMedia[];
 };
 
-export default IListCardTeam;
+export type IListSocialMedia = {
+  name: string;
+  icon: any;
+  link: string;
+};

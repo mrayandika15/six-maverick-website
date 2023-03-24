@@ -16,5 +16,7 @@ import HeroSection from './HeroSection';
 // section
 import InnovativeSection from './InnovativeSection';
 import SectionLayout from './layouts/SectionLayout';
+import OurTeamSection from './OurTeamSection';
+import AboutSection from './AboutSection';
 
-export { Navbar, MainLayout, HeroSection, SectionLayout, OutlineButton, CardTeam, InnovativeSection };
+export { Navbar, MainLayout, HeroSection, SectionLayout, OutlineButton, CardTeam, InnovativeSection, OurTeamSection, AboutSection };

@@ -1,7 +1,7 @@
 import React from 'react';
-import { Box, Container, Heading, AspectRatio, Text, Divider, Flex } from '@chakra-ui/react';
+import { Box, Heading, AspectRatio, Text, Divider, Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
-import { OutlineButton } from '@/components';
+import { OutlineButton, SectionLayout } from '@/components';
 
 const InnovativeSection = () => {
   return (
@@ -12,7 +12,7 @@ const InnovativeSection = () => {
       pb={10}
       justifyContent="center"
     >
-      <Container maxW="1640px">
+      <SectionLayout height="100%">
         <Heading
           as="h1"
           fontSize={128}
@@ -54,7 +54,7 @@ const InnovativeSection = () => {
           mt={10}
         >
           <video
-            src="./assets/team.mp4"
+            src="./assets/video/team.mp4"
             width="100%"
             autoPlay
             muted
@@ -72,6 +72,7 @@ const InnovativeSection = () => {
         <Flex
           align="flex-start"
           justify="space-between"
+          direction={['column', 'column', 'row', 'row']}
         >
           <Box w="100%">
             <Heading
@@ -121,7 +122,7 @@ const InnovativeSection = () => {
             <OutlineButton>Entertainment</OutlineButton>
           </Box>
         </Flex>
-      </Container>
+      </SectionLayout>
     </Box>
   );
 };

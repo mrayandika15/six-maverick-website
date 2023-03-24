@@ -1,17 +1,22 @@
 import React from 'react';
-import { Flex, Heading, Image, Stack, Card, CardBody } from '@chakra-ui/react';
-import { AiOutlineTwitter, AiOutlineGithub, AiOutlineLinkedin, AiOutlineInstagram } from 'react-icons/ai';
-import IListCardTeam from './CardTeam.data';
+import { Flex, Heading, Image, Stack, Card, CardBody, Link } from '@chakra-ui/react';
+import { IListCardTeam } from './CardTeam.type';
 
-const CardTeam = () => {
+type ICardTeam = {
+  data: IListCardTeam;
+};
+
+const CardTeam: React.FC<ICardTeam> = ({ data }) => {
   return (
     <Card
       maxW="sm"
       bg={'black'}
+      flexGrow={0}
+      flexShrink={0}
     >
       <CardBody>
         <Image
-          src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+          src={data?.image}
           alt="Green double couch with wooden legs"
           height="325px"
           width="325px"
@@ -27,13 +32,34 @@ const CardTeam = () => {
             color="white"
             fontSize="24px"
           >
-            Ismail Rohaga
+            {data?.name}
           </Heading>
           <Flex>
-            <AiOutlineTwitter
-              style={{ fontSize: '20px', marginRight: '5px' }}
-              color="white"
-            />
+            {data?.socialmedia.map((item, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={item.link}
+                  isExternal
+                >
+                  <item.icon
+                    style={{ fontSize: '20px', marginRight: '5px' }}
+                    color="white"
+                  />
+                </Link>
+              );
+            })}
+
+            {/* <Link
+              href={twitter}
+              isExternal
+            >
+              <AiOutlineTwitter
+                style={{ fontSize: '20px', marginRight: '5px' }}
+                color="white"
+              />
+            </Link>
+
             <AiOutlineGithub
               style={{ fontSize: '20px', marginRight: '5px' }}
               color="white"
@@ -45,7 +71,7 @@ const CardTeam = () => {
             <AiOutlineInstagram
               style={{ fontSize: '20px', marginRight: '5px' }}
               color="white"
-            />
+            /> */}
           </Flex>
         </Stack>
       </CardBody>

@@ -57,7 +57,7 @@ const CustomDrawer: React.FC<INavbar> = ({ isOpen, onClose }) => {
                 }}
                 role="group"
                 display="flex"
-                gap="15px"
+                gap="15px" 
                 transition="all"
                 transitionDuration="0.2s"
                 transitionTimingFunction="ease-in-out"

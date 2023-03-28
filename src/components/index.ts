@@ -1,22 +1,33 @@
 // core
-import Navbar from './core/Navbar';
+import Navbar from "./core/Navbar";
+import Footer from "./core/Footer";
 
 // layouts
-import MainLayout from './layouts/MainLayout';
+import MainLayout from "./layouts/MainLayout";
 
 // buttons
-import OutlineButton from './core/buttons/OutlineButton';
+import OutlineButton from "./core/buttons/OutlineButton";
 
 // card
-import CardTeam from './core/cards/CardTeam';
+import CardTeam from "./core/cards/CardTeam";
 
 // section
-import HeroSection from './HeroSection';
+import InnovativeSection from "./InnovativeSection";
+import SectionLayout from "./layouts/SectionLayout";
+import OurTeamSection from "./OurTeamSection";
+import AboutSection from "./AboutSection";
+import HeroSection from "./HeroSection";
+import FormSection from "./FormSection";
 
-// section
-import InnovativeSection from './InnovativeSection';
-import SectionLayout from './layouts/SectionLayout';
-import OurTeamSection from './OurTeamSection';
-import AboutSection from './AboutSection';
-
-export { Navbar, MainLayout, HeroSection, SectionLayout, OutlineButton, CardTeam, InnovativeSection, OurTeamSection, AboutSection };
+export {
+  Navbar,
+  MainLayout,
+  HeroSection,
+  SectionLayout,
+  OutlineButton,
+  CardTeam,
+  InnovativeSection,
+  OurTeamSection,
+  AboutSection,
+  FormSection,
+};

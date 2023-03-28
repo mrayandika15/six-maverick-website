@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Heading, AspectRatio, Text, Divider, Flex } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { OutlineButton, SectionLayout } from '@/components';
+import ScrolldownButton from '../core/ScrolldownButton';
 
 const InnovativeSection = () => {
   return (
@@ -120,6 +121,16 @@ const InnovativeSection = () => {
             <OutlineButton>USer experience</OutlineButton>
             <OutlineButton>USer interface</OutlineButton>
             <OutlineButton>Entertainment</OutlineButton>
+            <Box
+              position="absolute"
+              top={2650}
+              right={20}
+            >
+              <ScrolldownButton
+                size="base"
+                color="black"
+              />
+            </Box>
           </Box>
         </Flex>
       </SectionLayout>

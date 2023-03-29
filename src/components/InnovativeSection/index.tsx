@@ -9,14 +9,14 @@ const InnovativeSection = () => {
     <Box
       bg="white"
       w="100%"
-      px={8}
+      px={[1, 8]}
       pb={10}
       justifyContent="center"
     >
       <SectionLayout height="100%">
         <Heading
           as="h1"
-          fontSize={128}
+          fontSize={[42, 128]}
           color="black"
           fontFamily="Red Hat Display"
           fontWeight="400"
@@ -27,7 +27,7 @@ const InnovativeSection = () => {
         </Heading>
         <Heading
           as="h1"
-          fontSize={128}
+          fontSize={[42, 128]}
           color="black"
           fontFamily="Red Hat Display"
           fontWeight="600"
@@ -53,6 +53,8 @@ const InnovativeSection = () => {
           ratio={16 / 9}
           height={443}
           mt={10}
+          overflow="hidden"
+          borderRadius={[40, 100]}
         >
           <video
             src="./assets/video/team.mp4"
@@ -60,7 +62,11 @@ const InnovativeSection = () => {
             autoPlay
             muted
             loop
-            style={{ borderRadius: '100px' }}
+            style={{
+              minHeight: '100%',
+              minWidth: '100%',
+              objectFit: 'cover',
+            }}
           />
         </AspectRatio>
         <Divider
@@ -78,10 +84,10 @@ const InnovativeSection = () => {
           <Box w="100%">
             <Heading
               as="h2"
-              fontSize={48}
+              fontSize={[24, 48]}
               color="black"
               fontFamily="Red Hat Display"
-              fontWeight="400"
+              fontWeight={['700', '400']}
               textTransform="uppercase"
               lineHeight={1.5}
             >
@@ -89,12 +95,13 @@ const InnovativeSection = () => {
               <br /> collide
             </Heading>
             <Text
-              mt={10}
-              mr={10}
-              fontSize={24}
+              mt={[5, 10]}
+              mr={[0, 10]}
+              fontSize={[18, 24]}
               fontFamily="Red Hat Display"
               fontWeight="300"
               lineHeight={1.5}
+              wordBreak={['break-word', 'break-word', 'break-word', 'normal']}
               color="black"
             >
               independent developers with a passion for creative innovation, we are dedicated to delivering exceptional value to our clients through

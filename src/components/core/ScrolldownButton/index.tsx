@@ -22,11 +22,11 @@ const ScrolldownButton: React.FC<IScrolldownButton> = ({ size = 'base', color })
     <Box
       w={`${width}px`}
       h={size === 'base' ? '132.96px' : '260.71px'}
-      display="flex"
       rounded="full"
       justifyContent="center"
       alignItems="center"
       position="relative"
+      display={['none', 'flex']}
     >
       <Image
         src="/assets/icon/scroll-down.svg"

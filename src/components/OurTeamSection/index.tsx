@@ -14,7 +14,7 @@ const OurTeamSection = () => {
     >
       <Heading
         as="h2"
-        fontSize={128}
+        fontSize={[42, 128]}
         transform="uppercase"
         fontFamily={'Red Hat Display'}
         fontWeight="600"

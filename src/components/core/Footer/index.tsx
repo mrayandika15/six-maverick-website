@@ -19,8 +19,13 @@ const Footer = () => {
     >
       {isDesktop ? (
         <Flex gap="5px" fontSize="xl">
-          {SocialMedia.map((item) => {
-            return <item.icon style={{ cursor: "pointer" }} />;
+          {SocialMedia.map((item, index) => {
+            return (
+              <item.icon
+                style={{ cursor: "pointer" }}
+                key={`social-media${index}`}
+              />
+            );
           })}
         </Flex>
       ) : null}

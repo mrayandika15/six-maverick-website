@@ -14,7 +14,10 @@ const Navbar: React.FC = () => {
       alignItems="center"
       w="full"
       h="80px"
-      p="10px"
+      px="25px"
+      py="10px"
+      position="absolute"
+      zIndex="dropdown"
     >
       <Heading fontFamily="Red Hat Display" fontSize="xl">
         Mavericks

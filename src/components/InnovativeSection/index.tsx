@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, AspectRatio, Text, Divider, Flex } from '@chakra-ui/react';
+import { Box, Heading, AspectRatio, Text, Divider, Flex, Stack, Grid } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { OutlineButton, SectionLayout } from '@/components';
 import ScrolldownButton from '../core/ScrolldownButton';
@@ -77,9 +77,8 @@ const InnovativeSection = () => {
         />
 
         <Flex
-          align="flex-start"
           justify="space-between"
-          direction={['column', 'column', 'row', 'row']}
+          direction={['column', 'row']}
         >
           <Box w="100%">
             <Heading
@@ -87,7 +86,7 @@ const InnovativeSection = () => {
               fontSize={[24, 48]}
               color="black"
               fontFamily="Red Hat Display"
-              fontWeight={['700', '400']}
+              fontWeight={['500', '400']}
               textTransform="uppercase"
               lineHeight={1.5}
             >
@@ -113,14 +112,15 @@ const InnovativeSection = () => {
               fontSize={24}
               color="black"
               fontFamily="Red Hat Display"
-              fontWeight="400"
+              fontWeight={['500', '400']}
               textTransform="uppercase"
               letterSpacing={2}
+              mt={[5, 0]}
               mb={5}
             >
               OUR SERVICES
             </Heading>
-            <Flex direction={['column', 'column', 'row', 'row']}>
+            <Flex flexWrap="wrap">
               <OutlineButton>Branding</OutlineButton>
               <OutlineButton>Development</OutlineButton>
               <OutlineButton>SOcial</OutlineButton>

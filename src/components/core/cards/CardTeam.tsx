@@ -17,7 +17,7 @@ const CardTeam: React.FC<ICardTeam> = ({ data }) => {
       <CardBody>
         <Image
           src={data?.image}
-          alt="Green double couch with wooden legs"
+          alt="team"
           height="325px"
           width="325px"
         />

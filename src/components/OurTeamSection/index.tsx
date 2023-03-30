@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Heading, Flex } from '@chakra-ui/react';
 import CardTeam from '@/components/core/cards/CardTeam';
 import { ListCardTeam } from '../core/cards/CardTeam.data';
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import Marquee from 'react-fast-marquee';
 
 const OurTeamSection = () => {
   return (
@@ -21,30 +20,21 @@ const OurTeamSection = () => {
       >
         OUR <i>TEAM</i>
       </Heading>
-      <Flex
-        whiteSpace={'nowrap'}
-        as={motion.div}
-        animate={{
-          x: '-100%',
-          transition: {
-            x: {
-              repeat: Infinity,
-              repeatType: 'loop',
-              duration: 5,
-              ease: 'linear',
-            },
-          },
-        }}
+      <Marquee
+        speed={50}
+        gradient={false}
       >
-        {ListCardTeam.map((item, index) => {
-          return (
-            <CardTeam
-              key={index}
-              data={item}
-            />
-          );
-        })}
-      </Flex>
+        <Flex>
+          {ListCardTeam.map((item, index) => {
+            return (
+              <CardTeam
+                key={index}
+                data={item}
+              />
+            );
+          })}
+        </Flex>
+      </Marquee>
     </Container>
   );
 };

@@ -15,7 +15,7 @@ export const ListCardTeam: IListCardTeam[] = [
     ],
   },
   {
-    name: 'ismail',
+    name: 'Rachmizard',
     image:
       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     socialmedia: [
@@ -26,7 +26,7 @@ export const ListCardTeam: IListCardTeam[] = [
     ],
   },
   {
-    name: 'ismail',
+    name: 'Muhammad Rayandika',
     image:
       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     socialmedia: [
@@ -37,7 +37,7 @@ export const ListCardTeam: IListCardTeam[] = [
     ],
   },
   {
-    name: 'ismail',
+    name: 'Depras Nur Yadi',
     image:
       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     socialmedia: [
@@ -48,7 +48,7 @@ export const ListCardTeam: IListCardTeam[] = [
     ],
   },
   {
-    name: 'ismail',
+    name: 'Jilan Ferdiansyah',
     image:
       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     socialmedia: [
@@ -59,7 +59,7 @@ export const ListCardTeam: IListCardTeam[] = [
     ],
   },
   {
-    name: 'ismail',
+    name: 'Ricky Rizqi',
     image:
       'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80',
     socialmedia: [

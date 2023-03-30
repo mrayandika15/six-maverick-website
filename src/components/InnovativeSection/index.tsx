@@ -120,14 +120,15 @@ const InnovativeSection = () => {
             >
               OUR SERVICES
             </Heading>
-
-            <OutlineButton>Branding</OutlineButton>
-            <OutlineButton>Development</OutlineButton>
-            <OutlineButton>SOcial</OutlineButton>
-            <br />
-            <OutlineButton>USer experience</OutlineButton>
-            <OutlineButton>USer interface</OutlineButton>
-            <OutlineButton>Entertainment</OutlineButton>
+            <Flex direction={['column', 'column', 'row', 'row']}>
+              <OutlineButton>Branding</OutlineButton>
+              <OutlineButton>Development</OutlineButton>
+              <OutlineButton>SOcial</OutlineButton>
+              <br />
+              <OutlineButton>USer experience</OutlineButton>
+              <OutlineButton>USer interface</OutlineButton>
+              <OutlineButton>Entertainment</OutlineButton>
+            </Flex>
             <Box
               position="absolute"
               top={2650}

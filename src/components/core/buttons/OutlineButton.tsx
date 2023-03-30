@@ -20,6 +20,8 @@ const OutlineButton: React.FC<IOutlineButton> = ({ children }) => {
         px={5}
         display="inline-block"
         m={1}
+        flexShrink={0}
+        flexGrow={0}
       >
         {children}
       </Text>

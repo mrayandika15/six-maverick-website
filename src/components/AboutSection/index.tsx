@@ -19,6 +19,7 @@ const AboutSection: React.FC = () => {
             src="/assets/video/Empower.mp4"
             loop
             autoPlay={true}
+            playsInline
             muted
             style={{
               width: "100%",

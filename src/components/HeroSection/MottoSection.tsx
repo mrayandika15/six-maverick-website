@@ -25,7 +25,7 @@ const MottoSection: React.FC = () => {
         zIndex="hide"
         bottom={["25px", "12"]}
       >
-        <video loop autoPlay={true} muted>
+        <video loop autoPlay={true} muted playsInline>
           <source src="./assets/video/Hero.mp4" type="video/mp4" />
         </video>
       </AspectRatio>

@@ -2,6 +2,12 @@ import { AspectRatio, Box, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 
 const MottoSection: React.FC = () => {
+  const videoPlayer = React.useRef<HTMLVideoElement | null>(null);
+
+  React.useEffect(() => {
+    videoPlayer?.current?.play();
+  }, []);
+
   return (
     <Flex w="full" position="relative" direction="column">
       <Flex direction="column" gap="10px">
@@ -25,7 +31,7 @@ const MottoSection: React.FC = () => {
         zIndex="hide"
         bottom={["25px", "12"]}
       >
-        <video loop autoPlay={true} muted playsInline>
+        <video loop autoPlay={true} muted playsInline ref={videoPlayer}>
           <source src="./assets/video/Hero.mp4" type="video/mp4" />
         </video>
       </AspectRatio>

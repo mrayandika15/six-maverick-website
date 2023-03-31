@@ -1,18 +1,21 @@
-import React from 'react';
-import { Box, Heading, AspectRatio, Text, Divider, Flex, Stack, Grid } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { OutlineButton, SectionLayout } from '@/components';
-import ScrolldownButton from '../core/ScrolldownButton';
+import React from "react";
+import {
+  Box,
+  Heading,
+  AspectRatio,
+  Text,
+  Divider,
+  Flex,
+  Stack,
+  Grid,
+} from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { OutlineButton, SectionLayout } from "@/components";
+import ScrolldownButton from "../core/ScrolldownButton";
 
 const InnovativeSection = () => {
   return (
-    <Box
-      bg="white"
-      w="100%"
-      px={[1, 8]}
-      pb={10}
-      justifyContent="center"
-    >
+    <Box bg="white" w="100%" px={[1, 8]} pb={10} justifyContent="center">
       <SectionLayout height="100%">
         <Heading
           as="h1"
@@ -42,7 +45,7 @@ const InnovativeSection = () => {
               transition={{
                 duration: 1,
                 repeat: Infinity,
-                repeatType: 'reverse',
+                repeatType: "reverse",
               }}
             >
               _
@@ -60,12 +63,13 @@ const InnovativeSection = () => {
             src="./assets/video/team.mp4"
             width="100%"
             autoPlay
+            playsInline
             muted
             loop
             style={{
-              minHeight: '100%',
-              minWidth: '100%',
-              objectFit: 'cover',
+              minHeight: "100%",
+              minWidth: "100%",
+              objectFit: "cover",
             }}
           />
         </AspectRatio>
@@ -76,17 +80,14 @@ const InnovativeSection = () => {
           borderWidth={2}
         />
 
-        <Flex
-          justify="space-between"
-          direction={['column', 'row']}
-        >
+        <Flex justify="space-between" direction={["column", "row"]}>
           <Box w="100%">
             <Heading
               as="h2"
               fontSize={[24, 48]}
               color="black"
               fontFamily="Red Hat Display"
-              fontWeight={['500', '400']}
+              fontWeight={["500", "400"]}
               textTransform="uppercase"
               lineHeight={1.5}
             >
@@ -100,11 +101,13 @@ const InnovativeSection = () => {
               fontFamily="Red Hat Display"
               fontWeight="300"
               lineHeight={1.5}
-              wordBreak={['break-word', 'break-word', 'break-word', 'normal']}
+              wordBreak={["break-word", "break-word", "break-word", "normal"]}
               color="black"
             >
-              independent developers with a passion for creative innovation, we are dedicated to delivering exceptional value to our clients through
-              cutting-edge technologies, memorable user experiences, and expertly crafted software solutions.
+              independent developers with a passion for creative innovation, we
+              are dedicated to delivering exceptional value to our clients
+              through cutting-edge technologies, memorable user experiences, and
+              expertly crafted software solutions.
             </Text>
           </Box>
           <Box w="100%">
@@ -112,7 +115,7 @@ const InnovativeSection = () => {
               fontSize={24}
               color="black"
               fontFamily="Red Hat Display"
-              fontWeight={['500', '400']}
+              fontWeight={["500", "400"]}
               textTransform="uppercase"
               letterSpacing={2}
               mt={[5, 0]}
@@ -129,15 +132,8 @@ const InnovativeSection = () => {
               <OutlineButton>USer interface</OutlineButton>
               <OutlineButton>Entertainment</OutlineButton>
             </Flex>
-            <Box
-              position="absolute"
-              top={2650}
-              right={20}
-            >
-              <ScrolldownButton
-                size="base"
-                color="black"
-              />
+            <Box position="absolute" top={2650} right={20}>
+              <ScrolldownButton size="base" color="black" />
             </Box>
           </Box>
         </Flex>

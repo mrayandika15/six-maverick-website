@@ -5,9 +5,16 @@ import ScrolldownButton from "../core/ScrolldownButton";
 
 const AboutSection: React.FC = () => {
   return (
-    <SectionLayout>
-      <Flex w="full" h="full" direction="column" gap="25px" position="relative">
-        <Box w="full" h="390px" position="relative">
+    <SectionLayout props={{ height: ["full", "100vh"], pb: ["50px", "0px"] }}>
+      <Flex
+        w="full"
+        h="full"
+        mt={["0px", "0px"]}
+        direction="column"
+        gap="25px"
+        position="relative"
+      >
+        <Box w="full" h="390px" position="relative" display={["none", "block"]}>
           <video
             src="/assets/video/Empower.mp4"
             loop
@@ -22,11 +29,11 @@ const AboutSection: React.FC = () => {
         </Box>
 
         <Flex w="full" position="relative">
-          <Flex direction="column" w="889px" gap="15px">
-            <Heading fontSize="48px" fontWeight="300">
+          <Flex direction="column" w={["full", "889px"]} gap="15px">
+            <Heading fontSize={["130%", "48px"]} fontWeight="300">
               EMPOWER INNOVATION * CULTIVATE ENGAGEMENT * ACCELERATE GROWTH
             </Heading>
-            <Text w="681px" fontWeight="300">
+            <Text w={["full", "681px"]} fontWeight="300">
               independent developers with a passion for creative innovation, we
               are dedicated to delivering exceptional value to our clients
               through cutting-edge technologies, memorable user experiences, and

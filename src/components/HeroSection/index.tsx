@@ -8,14 +8,14 @@ const HeroSection: React.FC = () => {
   const [isDesktop] = useMediaQuery("(min-width: 800px)");
 
   return (
-    <SectionLayout>
+    <SectionLayout props={{ height: ["full", "100vh"] }}>
       <Flex
         w="full"
         h="full"
         justify={["start", "center"]}
         position="relative"
         direction="column"
-        py={["80px", "0px"]}
+        pt={["80px", "0px"]}
       >
         <MottoSection />
 

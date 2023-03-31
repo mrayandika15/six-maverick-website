@@ -1,6 +1,14 @@
-import React from 'react';
-import { Flex, Heading, Image, Stack, Card, CardBody, Link } from '@chakra-ui/react';
-import { IListCardTeam } from './CardTeam.type';
+import React from "react";
+import {
+  Flex,
+  Heading,
+  Image,
+  Stack,
+  Card,
+  CardBody,
+  Link,
+} from "@chakra-ui/react";
+import { IListCardTeam } from "./CardTeam.type";
 
 type ICardTeam = {
   data: IListCardTeam;
@@ -8,26 +16,13 @@ type ICardTeam = {
 
 const CardTeam: React.FC<ICardTeam> = ({ data }) => {
   return (
-    <Card
-      maxW="sm"
-      bg={'black'}
-      flexGrow={0}
-      flexShrink={0}
-    >
+    <Card maxW="sm" bg={"transparent"} flexGrow={0} flexShrink={0}>
       <CardBody>
-        <Image
-          src={data?.image}
-          alt="Green double couch with wooden legs"
-          height="325px"
-          width="325px"
-        />
-        <Stack
-          mt="3"
-          spacing="3"
-        >
+        <Image src={data?.image} alt="team" height="325px" width="325px" />
+        <Stack mt="3" spacing="3">
           <Heading
             size="md"
-            fontFamily={'Red Hat Display'}
+            fontFamily={"Red Hat Display"}
             fontWeight="700"
             color="white"
             fontSize="24px"
@@ -37,13 +32,9 @@ const CardTeam: React.FC<ICardTeam> = ({ data }) => {
           <Flex>
             {data?.socialmedia.map((item, index) => {
               return (
-                <Link
-                  key={index}
-                  href={item.link}
-                  isExternal
-                >
+                <Link key={index} href={item.link} isExternal>
                   <item.icon
-                    style={{ fontSize: '20px', marginRight: '5px' }}
+                    style={{ fontSize: "20px", marginRight: "5px" }}
                     color="white"
                   />
                 </Link>

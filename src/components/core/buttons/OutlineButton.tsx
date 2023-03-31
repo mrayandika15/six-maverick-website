@@ -13,12 +13,14 @@ const OutlineButton: React.FC<IOutlineButton> = ({ children }) => {
         borderRadius="100px"
         color="black"
         fontWeight="400"
-        fontSize={18}
+        fontSize={[14, 18]}
         fontFamily="Red Hat Display"
         align="center"
         textTransform="uppercase"
         px={5}
-        display="inline-block"
+        width="fit-content"
+        height="fit-content"
+        flexShrink={0}
         m={1}
       >
         {children}

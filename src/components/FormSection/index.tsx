@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 import SectionLayout from "../layouts/SectionLayout";
 import ListForm from "./ListForm";
@@ -12,9 +13,21 @@ const FormSection: React.FC = () => {
       <Flex w="full" h="full" direction="column" color="black">
         <Flex fontSize={[42, 128]} gap="15px">
           <Text fontWeight="400">HAVE AN </Text>
-          <Text fontWeight="600" fontStyle="italic">
-            IDEA ?
-          </Text>
+          <Flex fontWeight="600" fontStyle="italic">
+            IDEA
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{
+                duration: 1,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              ?
+            </motion.div>
+          </Flex>
         </Flex>
 
         <ListForm />
